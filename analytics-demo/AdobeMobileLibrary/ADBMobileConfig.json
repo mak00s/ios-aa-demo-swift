@@ -1,0 +1,39 @@
+{
+  "lastModified": "2018-06-18T04:37:55.567Z",
+  "marketingCloud": {
+    "org": "D9C10CEB570621D67F000101@AdobeOrg"
+  },
+  "target": {
+    "clientCode": "",
+    "timeout": 5
+  },
+  "audienceManager": {
+    "server": "",
+    "analyticsForwardingEnabled": false,
+    "timeout": 5
+  },
+  "acquisition": {
+    "server": "c00.adobe.com",
+    "appid": "127a62b7b8508e79351cf6ba77665d45eb5373d06608acc2cac3116f16ffe5b6"
+  },
+  "analytics": {
+    "rsids": "geo1xxsi-shimi-4-app",
+    "server": "dentsuisobarpartnersandbox.sc.omtrdc.net",
+    "ssl": true,
+    "offlineEnabled": true,
+    "charset": "UTF-8",
+    "lifecycleTimeout": 300,
+    "privacyDefault": "optedin",
+    "batchLimit": 0,
+    "timezone": "JST",
+    "timezoneOffset": 540,
+    "referrerTimeout": 5,
+    "backdateSessionInfo": false,
+    "poi": []
+  },
+  "messages": [],
+  "remotes": {
+    "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5b27350d64746d78d6002562.json",
+    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5b27350d64746d0bb700542a.json"
+  }
+}

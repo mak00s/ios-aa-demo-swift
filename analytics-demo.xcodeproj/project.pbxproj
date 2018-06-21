@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2462CD0720D793E400532FE5 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 2462CD0620D792CF00532FE5 /* ADBMobileConfig.json */; };
+		2462CD0B20D7963300532FE5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2462CD0A20D7963300532FE5 /* SystemConfiguration.framework */; };
+		2462CD0D20D7964300532FE5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2462CD0C20D7964300532FE5 /* libsqlite3.0.tbd */; };
+		2462CD0E20D796B700532FE5 /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2462CD0420D792CF00532FE5 /* AdobeMobileLibrary.a */; };
 		24775BB820D6070100CA6FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24775BB720D6070100CA6FE2 /* AppDelegate.swift */; };
 		24775BBA20D6070100CA6FE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24775BB920D6070100CA6FE2 /* ViewController.swift */; };
 		24775BBD20D6070100CA6FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24775BBB20D6070100CA6FE2 /* Main.storyboard */; };
@@ -15,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2462CD0420D792CF00532FE5 /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
+		2462CD0520D792CF00532FE5 /* ADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
+		2462CD0620D792CF00532FE5 /* ADBMobileConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		2462CD0A20D7963300532FE5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2462CD0C20D7964300532FE5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		2462CD0F20D79DB100532FE5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		24775BB420D6070100CA6FE2 /* analytics-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "analytics-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24775BB720D6070100CA6FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24775BB920D6070100CA6FE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2462CD0D20D7964300532FE5 /* libsqlite3.0.tbd in Frameworks */,
+				2462CD0B20D7963300532FE5 /* SystemConfiguration.framework in Frameworks */,
+				2462CD0E20D796B700532FE5 /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2462CD0820D7952900532FE5 /* AdobeMobileLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2462CD0520D792CF00532FE5 /* ADBMobile.h */,
+				2462CD0620D792CF00532FE5 /* ADBMobileConfig.json */,
+				2462CD0420D792CF00532FE5 /* AdobeMobileLibrary.a */,
+			);
+			path = AdobeMobileLibrary;
+			sourceTree = "<group>";
+		};
+		2462CD0920D7963300532FE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2462CD0C20D7964300532FE5 /* libsqlite3.0.tbd */,
+				2462CD0A20D7963300532FE5 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		24775BAB20D6070100CA6FE2 = {
 			isa = PBXGroup;
 			children = (
+				2462CD0F20D79DB100532FE5 /* Bridging-Header.h */,
 				24775BB620D6070100CA6FE2 /* analytics-demo */,
 				24775BB520D6070100CA6FE2 /* Products */,
+				2462CD0920D7963300532FE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +94,7 @@
 				24775BBE20D6070300CA6FE2 /* Assets.xcassets */,
 				24775BC020D6070300CA6FE2 /* LaunchScreen.storyboard */,
 				24775BC320D6070300CA6FE2 /* Info.plist */,
+				2462CD0820D7952900532FE5 /* AdobeMobileLibrary */,
 			);
 			path = "analytics-demo";
 			sourceTree = "<group>";
@@ -123,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24775BC220D6070300CA6FE2 /* LaunchScreen.storyboard in Resources */,
+				2462CD0720D793E400532FE5 /* ADBMobileConfig.json in Resources */,
 				24775BBF20D6070300CA6FE2 /* Assets.xcassets in Resources */,
 				24775BBD20D6070100CA6FE2 /* Main.storyboard in Resources */,
 			);
@@ -286,8 +322,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/analytics-demo/AdobeMobileLibrary",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.b-unit.analytics-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +344,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/analytics-demo/AdobeMobileLibrary",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.b-unit.analytics-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
